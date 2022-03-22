@@ -1,0 +1,161 @@
+// styling of climbingForm Section
+.climbFormSection {
+    margin-bottom: 20px;
+    
+    .climbingForm {
+        h2 {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .dateArea {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $quaternary;
+                padding: 10px;
+                border-radius: 15px;
+                label {
+                    display: flex;
+                    margin-right: 30px;
+                    align-items: center;
+                }
+                input {
+                    cursor: pointer;
+                    background-color: $quaternary;
+                }
+            }
+    
+            .selectionArea {
+                margin: 10px 0 20px 0;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                
+    
+                .climbSelection {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    background-color: $quaternary;
+                    border-radius: 15px;
+                    position: relative;
+                    align-items: center;
+                    .climbingSelect {
+                        position: relative;
+                    }
+                }
+            }
+    
+            button {
+                background-color: $tertiary;
+                color: white;
+                font-weight: bold;
+                width: 100%;
+                padding: 10px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+// Error Sign Styling
+.errorSign {
+    margin: 20px 0;
+    text-align: center;
+    p {
+        font-weight: bold;
+        color: $quinary;
+    }
+    li {
+        font-weight: bold;
+        color: $quinary;
+        font-size: 0.9rem;
+        font-style: italic;
+        padding: 3px;
+    }
+}
+
+// Climbing Entry Styling
+
+.climbingEntryContainer {
+    width: 100%;
+    position: relative;
+    .wrapper {
+        .eachClimbingEntryContainer {
+            background-color: $quaternary;
+            border-radius: 20px;
+            margin: 20px 0;
+            .topBar {
+                // border: solid 2px red;
+                padding: 10px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .closeButton {
+                    color: $quinary;
+                }
+            }
+            h3 {
+                margin: 10px;
+                text-align: center;
+            }
+            p {
+                margin-bottom: 5px;
+            }
+            .textContainer {
+                padding: 0 15px 10px 15px;
+            }
+
+        }
+    }
+
+}
+
+// Delete Entry styling
+.deletePanel {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box {
+        background-color: $secondary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding: 60px;
+        border-radius: 30px;
+        .close {
+            color: $quinary;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+        p {
+            padding: 10px;
+        }
+        .delete {
+            padding: 10px;
+            background-color: $tertiary;
+            font-weight: bold;
+            color: $secondary;
+            border-radius: 20px;
+        }
+    }
+
+
+}
